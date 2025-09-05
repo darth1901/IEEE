@@ -23,8 +23,7 @@ if __name__ == "__main__":
 
   #normalisation
   # The formula for min-max normalization is (X - min(X)) / (max(X) - min(X)).
-  # We add a small epsilon to the denominator to avoid division by zero if all elements are the same.
-  normalized_matrix = (matrix - min_val) / ((max_val - min_val) + 1e-9)
+  normalized_matrix = (matrix - min_val) / ((max_val - min_val))
   print("--- Normalized Matrix (values between 0 and 1) ---")
   print(normalized_matrix)
   print("-" * 30)
@@ -37,3 +36,4 @@ if __name__ == "__main__":
   print("--- Flattened and Sorted 1D Array ---")
   print(sorted_array)
   print("-" * 30)
+

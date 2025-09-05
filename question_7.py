@@ -3,7 +3,7 @@ if __name__ == "__main__":
   list1 = [3, 4, 5, 1, 4, 6, 1, 7, 7]
   list2 = [5, 8, 2, 9, 9, 4, 6, 3]
 
-  print("--- Original Lists ---")
+  print(" Original Lists ")
   print(f"List 1: {list1}")
   print(f"List 2: {list2}")
   print("-" * 30)
@@ -18,4 +18,5 @@ if __name__ == "__main__":
 
   print(intersection_list)
   print("-" * 30)
+
 

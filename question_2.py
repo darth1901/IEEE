@@ -1,26 +1,20 @@
-# This program takes a paragraph as input and prints all the palindromic words found in it.
-
 import re # Import the regular expressions module to help with cleaning the text.
 
 def find_palindromes(text):
-    # 1. Clean the input: Use regex to find all sequences of word characters.
-  #    The \b ensures we match whole words only.
-  #    .lower() converts the entire text to lowercase to make the comparison case-insensitive.
+  # regex function finds all sequence of word characters   
+  # \b ensures we match whole words only.
   words = re.findall(r'\b\w+\b', text.lower())
 
-  # 2. identifying palindromes:
+  #identifying palindromes
   palindromes = []
   for word in words:
 
     if word == word[::-1]:
       palindromes.append(word)
 
-  # 3. Return unique palindromes: convert the list to a set to remove duplicates,
-  #    then back to a list.
+  #returns unique palindromes
   return list(set(palindromes))
 
-
-# --- Main part of the program ---
 if __name__ == "__main__":
   try:
     paragraph = input("Enter a paragraph (up to 100 words): ")
@@ -44,3 +38,4 @@ if __name__ == "__main__":
 
   except end:
       pass
+

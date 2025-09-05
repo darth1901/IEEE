@@ -1,8 +1,8 @@
 
 
 def print_star_pattern(n):
-  	#Prints a star pattern with n rows
-  	# The outer loop iterates through each row from 1 to n.
+  	#prints a star pattern with n rows
+  	#the outer loop iterates through each row from 1 to n.
   for i in range(1, n + 1):
     print('*' * i)
 
@@ -13,5 +13,6 @@ if __name__ == "__main__":
     print_star_pattern(num_rows)
   except end:
     pass
+
 
 
